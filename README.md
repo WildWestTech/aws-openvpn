@@ -37,7 +37,7 @@ create an openvpn server in aws
             - enter your password
             - confirm password
     - navigate to your public ipv4 address
-        - https://<public ip>:943
+        - https://your-public-ip:943
         - login to the admin portal
     - VPN Settings
         - Routing
@@ -45,7 +45,7 @@ create an openvpn server in aws
             - Save Settings (scroll down)
             - Update Running Server (scroll up)
     - navigate back back here 
-        - https://<public ip>:943
+        - https://your-public-ip:943
         - grab your preferred method of connection
             - i already have an openvpn, so i just grabbed the connection profile
             - if you don't have a client, pick one of the clients to download
