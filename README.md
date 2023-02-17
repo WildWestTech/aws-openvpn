@@ -19,6 +19,8 @@ create an openvpn server in aws
     - per stackoverflow, there is a request to add this feature
     - https://github.com/hashicorp/terraform-provider-aws/issues/17146
     - for now, just follow the prompt (there should be a link to follow)
+        - note: you may need to be logged in to the matching sso account
+            - continue to subscribe -> accept terms
 
 - Run the terraform script again to complete the build
 
@@ -31,11 +33,13 @@ create an openvpn server in aws
     - open your terminal and run the command provided (you may need to point to where you downloaded the key file)
     - accept the terms
     - now run the same command again, but this time, login as openvpnas
+        - ssh -i "openvpn-pem-keys.pem" openvpnas@ec2-12-34-56-78.compute-1.amazonaws.com
     - time to update the password
         - i recommend using a password generator (https://passwordsgenerator.net/)
         - sudo passwd openvpn
-            - enter your password
+            - enter your password (if pasting, righ-click)
             - confirm password
+        - exit out
     - navigate to your public ipv4 address
         - https://<public ip>:943
         - login to the admin portal
@@ -49,5 +53,3 @@ create an openvpn server in aws
         - grab your preferred method of connection
             - i already have an openvpn, so i just grabbed the connection profile
             - if you don't have a client, pick one of the clients to download
-
-
