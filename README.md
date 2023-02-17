@@ -1,5 +1,5 @@
 # aws-openvpn
-create an openvpn server in aws
+An OpenVPN Server in AWS.  This will sit in a stand-alone account.  Later, we will create cross-account vpc-peering connections to fully utilize the VPN connection.
 
 ## Console Steps Before You Begin
 - Console -> EC2 -> Key Pairs -> Create Key Pair
